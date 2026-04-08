@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LLM Wiki App 隐私政策</title>
+    <link rel="stylesheet" href="./legal.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <span class="eyebrow">Privacy Policy</span>
+        <h1>LLM Wiki App 隐私政策</h1>
+        <p>
+          本页面说明 LLM Wiki App 在 macOS 上如何访问、处理、存储和共享信息。本文档基于 2026 年 4 月
+          8 日当前版本的应用行为编写。
+        </p>
+        <div class="hero-meta">
+          <span>生效日期：2026-04-08</span>
+          <span>适用版本：macOS 桌面版</span>
+          <span><a href="./support.html">支持页面</a></span>
+        </div>
+      </section>
+
+      <div class="banner">
+        联系邮箱：<span class="mono">lin757834215@gmail.com</span> · 支持页面：
+        <span class="mono">https://linsheng1994.github.io/llmwiki-legal/support.html</span>。如果未来新增云账户、托管模型、第三方分析或支付功能，请同步更新本政策。
+      </div>
+
+      <nav class="nav" aria-label="Section Navigation">
+        <a href="#summary">摘要</a>
+        <a href="#collect">我们会处理哪些信息</a>
+        <a href="#use">如何使用这些信息</a>
+        <a href="#share">何时会共享</a>
+        <a href="#store">如何存储</a>
+        <a href="#choices">你的控制权</a>
+        <a href="#contact">联系我们</a>
+      </nav>
+
+      <section class="card" id="summary">
+        <h2>摘要</h2>
+        <div class="grid">
+          <article class="tile">
+            <strong>本地优先</strong>
+            <span>工作区、知识页、审阅记录和大多数运行数据默认保留在你的 Mac 上。</span>
+          </article>
+          <article class="tile">
+            <strong>用户主动外发</strong>
+            <span>只有当你配置模型或主动导入链接、检索网页、调用远程模型时，应用才会发起相应网络请求。</span>
+          </article>
+          <article class="tile">
+            <strong>API Key 单独保存</strong>
+            <span>模型接口密钥保存在 macOS Keychain，而不是明文写入工作区文件。</span>
+          </article>
+          <article class="tile">
+            <strong>无第三方分析 SDK</strong>
+            <span>当前版本不包含外部统计 SDK；“匿名使用统计”仅记录本地计数，不会上传到外部分析服务。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" id="collect">
+        <h2>我们会处理哪些信息</h2>
+        <table class="fact-table">
+          <tr>
+            <th>你选择的文件与文件夹</th>
+            <td>
+              当你打开工作区、配置 watched folder、导入来源文件或添加对话附件时，应用会访问这些由你主动选择的本地文件或目录。
+            </td>
+          </tr>
+          <tr>
+            <th>你输入的模型配置</th>
+            <td>
+              包括提供方名称、Base URL、模型名称、请求策略等设置，以及你输入的 API Key。API Key 会单独存入 macOS Keychain。
+            </td>
+          </tr>
+          <tr>
+            <th>工作区内容</th>
+            <td>
+              包括来源文件、来源笔记、知识页面、审阅队列、任务历史、查询结果、日志和 schema 配置。这些内容通常保存在你选择的工作区目录中。
+            </td>
+          </tr>
+          <tr>
+            <th>你主动输入的链接</th>
+            <td>
+              如果你手动添加网页链接或触发研究来源发现功能，应用会处理这些 URL，并可能向目标网站或搜索提供方发起请求。
+            </td>
+          </tr>
+          <tr>
+            <th>本地使用计数</th>
+            <td>
+              如果你开启“匿名使用统计”，应用只会在本机记录计数类信息，例如模型请求次数、工作区写入次数和最近记录时间。
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="card" id="use">
+        <h2>我们如何使用这些信息</h2>
+        <h3>1. 在本地完成知识库工作流</h3>
+        <p>
+          应用会使用你选择的文件和工作区内容来完成来源导入、Inbox 整理、知识页维护、审阅、查询、校验和任务追踪。
+        </p>
+
+        <h3>2. 在本地执行 OCR 与内容预处理</h3>
+        <p>
+          图片与 PDF 的 OCR 默认在设备本地执行，当前版本使用 Apple Vision 与 PDFKit 进行文本提取，不需要把 OCR 原始文件上传到开发者自有服务器。
+        </p>
+
+        <h3>3. 在你主动触发时发起网络请求</h3>
+        <p>
+          当你主动执行下列操作时，应用可能会发起网络请求：
+        </p>
+        <ul>
+          <li>测试模型连接、发送对话、运行查询、运行校验、整理 Inbox、保存 durable 结果</li>
+          <li>导入网页链接、抓取远程来源快照</li>
+          <li>使用研究来源发现功能时，向搜索服务请求候选来源</li>
+        </ul>
+        <p>
+          对于模型请求，应用会把完成当前任务所需的文本发送到你在设置中填写的 Base URL。这可能包括查询文本、对话消息、附件提取结果、工作区引用、schema 上下文或最近活动摘要。
+        </p>
+      </section>
+
+      <section class="card" id="share">
+        <h2>何时会共享或传输信息</h2>
+        <h3>用户配置的模型服务</h3>
+        <p>
+          如果你配置了兼容 OpenAI Chat Completions 的模型接口，并主动执行需要模型参与的操作，相关输入内容会被发送到你填写的服务端点。该服务可能由 OpenAI、兼容网关、自建代理、本地模型服务，或你选择的其他第三方提供。
+        </p>
+        <p>
+          这些第三方服务如何存储、保留或使用你发送的数据，取决于你所选择的提供方及其隐私政策，而不是本应用自身。
+        </p>
+
+        <h3>目标网站与搜索提供方</h3>
+        <p>
+          如果你主动导入远程链接，应用会访问该链接对应的网站以获取页面快照。如果你使用研究来源发现功能，应用当前会向 DuckDuckGo HTML 搜索端点发起搜索请求，然后再由你决定是否继续收集候选来源。
+        </p>
+
+        <h3>开发者自有外部分析服务</h3>
+        <p>
+          截至 2026 年 4 月 8 日，当前版本不包含把匿名统计上传到开发者自有外部分析服务的逻辑，也不集成第三方分析 SDK。
+        </p>
+      </section>
+
+      <section class="card" id="store">
+        <h2>信息如何存储与保护</h2>
+        <table class="fact-table">
+          <tr>
+            <th>工作区数据</th>
+            <td>保存在你选择的本地文件夹中，由你自行决定保存位置、备份方式和删除时机。</td>
+          </tr>
+          <tr>
+            <th>API Key</th>
+            <td>保存在 macOS Keychain 中，而不是写入工作区文本文件。</td>
+          </tr>
+          <tr>
+            <th>偏好设置</th>
+            <td>保存在本机 UserDefaults 中，包括提供方名称、Base URL、模型名、是否启用本地计数等设置。</td>
+          </tr>
+          <tr>
+            <th>文件夹权限</th>
+            <td>应用会使用 macOS 的 security-scoped bookmark 机制记住你授权过的工作区和 watched folder 访问权限。</td>
+          </tr>
+        </table>
+        <p class="muted">
+          尽管应用使用 macOS 提供的系统能力存储密钥和访问权限，但任何设备级安全都仍取决于你的 macOS 账户安全、磁盘加密、备份策略和所选第三方服务的安全实践。
+        </p>
+      </section>
+
+      <section class="card" id="choices">
+        <h2>你的控制权与选择</h2>
+        <ul>
+          <li>你可以不配置任何远程模型，只把应用当作本地知识库工作台使用。</li>
+          <li>你可以在设置中关闭“匿名使用统计”；当前它仅影响本地计数是否被记录。</li>
+          <li>你可以删除已保存的 API Key，应用会从 macOS Keychain 中移除该密钥。</li>
+          <li>你可以删除本地工作区、移除 watched folder 或撤销你提供的文件夹访问权限。</li>
+          <li>如果你选择第三方模型服务，应自行审阅其隐私政策并决定是否继续使用。</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>数据保留</h2>
+        <p>
+          本地数据一般会一直保留在你的设备上，直到你主动删除工作区文件、清除设置或卸载应用。发送给第三方模型服务、目标网站或搜索服务的数据，其保留期限由相应服务提供方决定。
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>儿童隐私</h2>
+        <p>
+          LLM Wiki App 面向知识工作与研究使用场景设计，不以儿童为主要目标用户。请不要让儿童在不了解外部模型服务风险的情况下独自配置第三方接口并上传敏感信息。
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>政策更新</h2>
+        <p>
+          如果应用的数据处理方式发生变化，例如新增账户系统、云同步、托管模型、支付能力、外部分析 SDK 或客服系统，我们会更新本隐私政策并在发布新版本前同步更新对应页面。
+        </p>
+      </section>
+
+      <section class="card" id="contact">
+        <h2>联系我们</h2>
+        <p>
+          开发者名称：Junge
+        </p>
+        <p>
+          联系邮箱：<span class="mono">lin757834215@gmail.com</span>
+        </p>
+        <p>
+          支持页面：<span class="mono">https://linsheng1994.github.io/llmwiki-legal/support.html</span>
+        </p>
+      </section>
+
+      <footer class="footer">
+        返回 <a href="./index.html">法务页面目录</a> · 支持页 <a href="./support.html">support.html</a>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+:root {
+  color-scheme: light;
+  --bg: #f5f1ea;
+  --paper: rgba(255, 255, 255, 0.86);
+  --paper-strong: #ffffff;
+  --ink: #1e2329;
+  --muted: #5d6772;
+  --line: rgba(30, 35, 41, 0.12);
+  --sea: #245f64;
+  --clay: #855338;
+  --sand: #d9b992;
+  --rose: #9a4754;
+  --warn: #fff1cf;
+  --warn-line: #e7bb43;
+  --shadow: 0 18px 44px rgba(30, 35, 41, 0.08);
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+  --max: 980px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background:
+    radial-gradient(circle at top right, rgba(36, 95, 100, 0.12), transparent 26rem),
+    radial-gradient(circle at bottom left, rgba(133, 83, 56, 0.12), transparent 30rem),
+    var(--bg);
+  color: var(--ink);
+  font-family:
+    "PingFang SC",
+    "Noto Sans SC",
+    "Helvetica Neue",
+    sans-serif;
+  line-height: 1.65;
+}
+
+body {
+  margin: 0;
+  padding: 32px 20px 56px;
+}
+
+a {
+  color: var(--sea);
+}
+
+.page {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 34px;
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(145deg, rgba(24, 28, 33, 0.96), rgba(36, 95, 100, 0.88));
+  color: #f9f6ef;
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #d9f0ee;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hero h1 {
+  margin: 18px 0 10px;
+  font-size: clamp(34px, 6vw, 52px);
+  line-height: 1.08;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 54rem;
+  color: rgba(249, 246, 239, 0.82);
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.hero-meta span,
+.nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: inherit;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.banner {
+  margin: 20px 0;
+  padding: 16px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--warn-line);
+  background: var(--warn);
+  color: #5f4511;
+  box-shadow: 0 8px 20px rgba(231, 187, 67, 0.14);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 26px;
+}
+
+.nav a {
+  color: var(--sea);
+  border-color: rgba(36, 95, 100, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.card {
+  margin-top: 18px;
+  padding: 26px;
+  border-radius: var(--radius-lg);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.card h2 {
+  margin: 0 0 14px;
+  font-size: 27px;
+  line-height: 1.18;
+}
+
+.card h3 {
+  margin: 18px 0 8px;
+  font-size: 18px;
+}
+
+.card p,
+.card li {
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.tile {
+  padding: 18px;
+  border-radius: var(--radius-md);
+  background: var(--paper-strong);
+  border: 1px solid var(--line);
+}
+
+.tile strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+.fact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.fact-table th,
+.fact-table td {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.fact-table th {
+  width: 28%;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.mono {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    monospace;
+}
+
+.footer {
+  margin-top: 22px;
+  padding: 20px 4px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer a {
+  color: var(--clay);
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 20px 14px 40px;
+  }
+
+  .hero,
+  .card {
+    padding: 22px;
+  }
+
+  .fact-table th,
+  .fact-table td {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  .fact-table tr {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .fact-table th,
+  .fact-table td {
+    border: 0;
+  }
+}

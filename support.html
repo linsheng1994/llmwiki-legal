@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LLM Wiki App 支持页面</title>
+    <link rel="stylesheet" href="./legal.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <span class="eyebrow">Support</span>
+        <h1>LLM Wiki App 支持页面</h1>
+        <p>
+          这是提供给 App Store Connect 的支持 URL 页面。它概述了产品定位、上手方式、常见问题和隐私入口。
+        </p>
+        <div class="hero-meta">
+          <span>适用平台：macOS</span>
+          <span>页面更新时间：2026-04-08</span>
+          <span><a href="./privacy-policy.html">隐私政策</a></span>
+        </div>
+      </section>
+
+      <div class="banner">
+        联系邮箱：<span class="mono">lin757834215@gmail.com</span> · 当前公开地址将发布到
+        <span class="mono">https://linsheng1994.github.io/llmwiki-legal/support.html</span>。
+      </div>
+
+      <nav class="nav" aria-label="Section Navigation">
+        <a href="#overview">产品概览</a>
+        <a href="#quickstart">快速开始</a>
+        <a href="#faq">常见问题</a>
+        <a href="#privacy">隐私说明</a>
+        <a href="#contact">联系支持</a>
+      </nav>
+
+      <section class="card" id="overview">
+        <h2>产品概览</h2>
+        <p>
+          LLM Wiki App 是一个本地优先的 macOS 知识库工作台，用于把来源文件、网页、PDF、图片 OCR、知识页、审阅记录、查询结果和校验报告组织到同一个工作区中。
+        </p>
+        <div class="grid">
+          <article class="tile">
+            <strong>本地工作区</strong>
+            <span>围绕你主动选择的本地文件夹运行，而不是把全部内容托管到云端。</span>
+          </article>
+          <article class="tile">
+            <strong>Inbox 工作流</strong>
+            <span>新材料先进入 Inbox，再整理成来源笔记、知识更新和待审 patch。</span>
+          </article>
+          <article class="tile">
+            <strong>可选模型接入</strong>
+            <span>支持连接兼容 OpenAI Chat Completions 的远程或本地模型接口。</span>
+          </article>
+          <article class="tile">
+            <strong>可审计</strong>
+            <span>任务、审阅和写入轨迹都保留在工作区内，方便回看与回滚。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" id="quickstart">
+        <h2>快速开始</h2>
+        <ol>
+          <li>打开应用，选择一个本地文件夹作为工作区。</li>
+          <li>在“工作区”页初始化结构，生成 Inbox、wiki、review、tasks 等目录。</li>
+          <li>进入“来源”导入文件或链接。</li>
+          <li>点击“开始整理”，把 Inbox 材料转成来源笔记、知识提案或待审 patch。</li>
+          <li>进入“审阅”“知识库”“查询”“校验”继续维护工作区。</li>
+        </ol>
+      </section>
+
+      <section class="card" id="faq">
+        <h2>常见问题</h2>
+
+        <h3>应用是否必须联网？</h3>
+        <p>
+          不必须。你可以只使用本地工作区、OCR、浏览和部分本地规则流程。只有你主动导入网页、发现远程来源或配置并调用模型时，应用才会联网。
+        </p>
+
+        <h3>为什么某些功能提示需要先配置模型？</h3>
+        <p>
+          某些 workspace schema 会要求 durable 知识维护必须由模型生成。如果当前工作区处于严格 durable 模式，而你还没有完成模型接入，应用会阻止相关写入动作。
+        </p>
+
+        <h3>API Key 存在哪里？</h3>
+        <p>
+          API Key 保存在 macOS Keychain 中，不会明文写入工作区文件。
+        </p>
+
+        <h3>watched folder 是什么？</h3>
+        <p>
+          watched folder 是你为某个工作区授权的本地目录。应用可以监测该目录中的新文件并自动把它们收进工作区 Inbox。
+        </p>
+
+        <h3>如果模型服务是我自己填的地址，数据由谁负责？</h3>
+        <p>
+          如果你把内容发送到自定义 Base URL，对应服务的运营方将按其自身政策处理数据。请在使用前确认你信任该服务并理解其保留与审计策略。
+        </p>
+      </section>
+
+      <section class="card" id="privacy">
+        <h2>隐私说明</h2>
+        <p>
+          LLM Wiki App 默认把工作区文件、索引、审阅记录和任务历史保存在你的 Mac 上。当前版本的“匿名使用统计”仅记录本地计数，不会上传到开发者自有外部分析服务。
+        </p>
+        <p>
+          只有当你主动执行需要联网的动作时，应用才会向目标网站、搜索服务或你配置的模型端点发送必要内容。详情请阅读
+          <a href="./privacy-policy.html">完整隐私政策</a>。
+        </p>
+      </section>
+
+      <section class="card" id="contact">
+        <h2>联系支持</h2>
+        <p>开发者名称：Junge</p>
+        <p>联系邮箱：<span class="mono">lin757834215@gmail.com</span></p>
+        <p>支持站点：<span class="mono">https://linsheng1994.github.io/llmwiki-legal/support.html</span></p>
+      </section>
+
+      <footer class="footer">
+        返回 <a href="./index.html">法务页面目录</a> · 隐私页 <a href="./privacy-policy.html">privacy-policy.html</a>
+      </footer>
+    </main>
+  </body>
+</html>
