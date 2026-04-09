@@ -1,165 +1,238 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>XinHuan 隐私政策</title>
+    <title>XinHuan Privacy Policy</title>
     <link rel="stylesheet" href="../legal.css" />
+    <script defer src="../locale.js"></script>
   </head>
   <body>
-    <main class="page">
+    <div class="page">
+      <section class="hero">
+        <span class="eyebrow">Privacy Policy</span>
+        <div class="locale-switch" aria-label="Language switch">
+          <a href="?lang=zh-CN" data-lang-link="zh-CN">简体中文</a>
+          <a href="?lang=en" data-lang-link="en">English</a>
+          <a href="?lang=fr-CA" data-lang-link="fr-CA">Français</a>
+        </div>
+      </section>
+    </div>
+
+    <main class="page" data-lang="zh-CN">
       <section class="hero">
         <span class="eyebrow">Privacy Policy</span>
         <h1>XinHuan 隐私政策</h1>
-        <p>
-          本页面说明 XinHuan 当前 iPhone 版本如何访问、处理、存储和共享信息。本文档基于 2026 年 4 月 9 日当前版本的应用行为编写。
-        </p>
+        <p>本页面说明 XinHuan 当前 iPhone 版本如何访问、处理、存储和共享信息。本文档基于 2026 年 4 月 9 日当前版本的应用行为编写。</p>
         <div class="hero-meta">
           <span>生效日期：2026-04-09</span>
           <span>适用版本：iPhone 版</span>
-          <span><a href="./support.html">支持页面</a></span>
+          <span><a href="./support.html?lang=zh-CN">支持页面</a></span>
         </div>
       </section>
 
-      <div class="banner">
-        联系邮箱：<span class="mono">lin757834215@gmail.com</span> · 支持页面：
-        <span class="mono">https://linsheng1994.github.io/llmwiki-legal/xinhuan/support.html</span>
-      </div>
+      <div class="banner">联系邮箱：<span class="mono">lin757834215@gmail.com</span> · 支持页面：<span class="mono">https://linsheng1994.github.io/llmwiki-legal/xinhuan/support.html</span></div>
 
-      <nav class="nav" aria-label="Section Navigation">
-        <a href="#summary">摘要</a>
-        <a href="#collect">我们会处理哪些信息</a>
-        <a href="#use">如何使用这些信息</a>
-        <a href="#share">何时会共享</a>
-        <a href="#store">如何存储</a>
-        <a href="#choices">你的控制权</a>
-        <a href="#contact">联系我们</a>
-      </nav>
-
-      <section class="card" id="summary">
+      <section class="card">
         <h2>摘要</h2>
         <div class="grid">
-          <article class="tile">
-            <strong>本地优先</strong>
-            <span>会话记录、担忧条目、思维记录、问题拆解、支持联系人和个性化备注默认只保存在你的设备上。</span>
-          </article>
-          <article class="tile">
-            <strong>无账号体系</strong>
-            <span>当前版本不需要注册、登录或云账户，也不包含开发者自有后端服务。</span>
-          </article>
-          <article class="tile">
-            <strong>无第三方分析</strong>
-            <span>当前版本不集成第三方分析 SDK，不会为了广告或行为画像收集你的数据。</span>
-          </article>
-          <article class="tile">
-            <strong>用户主动外发</strong>
-            <span>只有当你主动点击电话、短信、分享或文件导入导出等系统动作时，信息才会离开应用。</span>
-          </article>
+          <article class="tile"><strong>本地优先</strong><span>会话记录、担忧条目、思维记录、问题拆解、支持联系人和个性化备注默认只保存在你的设备上。</span></article>
+          <article class="tile"><strong>无账号体系</strong><span>当前版本不需要注册、登录或云账户，也不包含开发者自有后端服务。</span></article>
+          <article class="tile"><strong>无第三方分析</strong><span>当前版本不集成第三方分析 SDK，不会为了广告或行为画像收集你的数据。</span></article>
+          <article class="tile"><strong>用户主动外发</strong><span>只有当你主动点击电话、短信、分享或文件导入导出等动作时，信息才会离开应用。</span></article>
         </div>
       </section>
 
-      <section class="card" id="collect">
+      <section class="card">
         <h2>我们会处理哪些信息</h2>
         <table class="fact-table">
-          <tr>
-            <th>你输入的内容</th>
-            <td>包括支持联系人、安定备注、担忧条目、思维记录、问题拆解内容，以及你在会话结束后保存的备注。</td>
-          </tr>
-          <tr>
-            <th>本地使用状态</th>
-            <td>包括当前场景、已保存工具、固定工具、提醒时段、是否完成首次引导、最近有效动作等本地设置。</td>
-          </tr>
-          <tr>
-            <th>通知设置</th>
-            <td>如果你启用提醒，应用会在本机安排本地通知。提醒内容、时间和暂停状态保存在设备本地。</td>
-          </tr>
-          <tr>
-            <th>备份文件</th>
-            <td>如果你主动导出或导入本地备份，应用会读取或写入你手动选择的 JSON 文件。</td>
-          </tr>
+          <tr><th>你输入的内容</th><td>包括支持联系人、安定备注、担忧条目、思维记录、问题拆解内容，以及你在会话结束后保存的备注。</td></tr>
+          <tr><th>本地使用状态</th><td>包括当前场景、已保存工具、固定工具、提醒时段、是否完成首次引导、最近有效动作等本地设置。</td></tr>
+          <tr><th>通知设置</th><td>如果你启用提醒，应用会在本机安排本地通知。提醒内容、时间和暂停状态保存在设备本地。</td></tr>
+          <tr><th>备份文件</th><td>如果你主动导出或导入本地备份，应用会读取或写入你手动选择的 JSON 文件。</td></tr>
         </table>
       </section>
 
-      <section class="card" id="use">
+      <section class="card">
         <h2>我们如何使用这些信息</h2>
-        <h3>1. 提供安定与反思工具</h3>
-        <p>
-          应用会使用你输入的内容来支持呼吸、落地、肌肉放松、视觉节律、担忧时间、思维记录和问题拆解等功能，并帮助你回顾哪些方式对你更有帮助。
-        </p>
-
-        <h3>2. 在本地生成记录与趋势</h3>
-        <p>
-          你的会话记录、标签和前后强度分数会在设备本地用于生成历史记录、趋势图和模式提示。这些提示用于支持自我觉察，不用于诊断或医疗判断。
-        </p>
-
-        <h3>3. 在你主动触发时调用系统功能</h3>
-        <p>
-          当你主动执行下列操作时，应用可能会离开自身边界并调用 iOS 系统能力：
-        </p>
-        <ul>
-          <li>拨打电话或发送短信给支持联系人</li>
-          <li>分享记录、安定计划或深链</li>
-          <li>导入或导出本地备份文件</li>
-          <li>打开系统设置以管理通知权限</li>
-        </ul>
+        <p>这些信息仅用于提供安定工具、本地趋势、支持联系人、备份恢复和提醒功能。当前版本不使用这些数据做广告、画像或第三方分析。</p>
       </section>
 
-      <section class="card" id="share">
+      <section class="card">
         <h2>何时会共享或传输信息</h2>
-        <p>
-          当前版本不包含开发者自有后端、云同步、账号系统、托管模型服务、第三方分析 SDK 或广告网络。
-        </p>
-        <p>
-          只有在你主动进行电话、短信、分享或文件导入导出等操作时，相关内容才会传递给 iOS 系统应用或写入你选定的本地文件。
-        </p>
+        <p>当前版本不包含开发者自有后端、云同步、账号系统、托管模型服务、第三方分析 SDK 或广告网络。只有在你主动执行电话、短信、分享或文件导入导出时，相关内容才会通过系统应用离开 App。</p>
       </section>
 
-      <section class="card" id="store">
+      <section class="card">
         <h2>信息如何存储与保护</h2>
-        <table class="fact-table">
-          <tr>
-            <th>应用状态与记录</th>
-            <td>保存在设备本地的应用支持目录中，默认不上传到开发者服务器。</td>
-          </tr>
-          <tr>
-            <th>Widget 快照</th>
-            <td>为了支持小组件，应用会把推荐动作和少量摘要状态写入本地 App Group 容器，供同设备上的小组件读取。</td>
-          </tr>
-          <tr>
-            <th>备份文件</th>
-            <td>如果你导出备份，文件会保存到你自己选择的位置；如果你导入备份，文件内容会恢复到当前设备本地。</td>
-          </tr>
-        </table>
+        <p>应用状态与记录保存在设备本地。Widget 为了读取推荐动作，会使用本地 App Group 容器保存少量摘要状态。导出备份时，文件会保存到你自己选择的位置。</p>
       </section>
 
-      <section class="card" id="choices">
-        <h2>你的控制权与选择</h2>
+      <section class="card">
+        <h2>你的控制权</h2>
         <ul>
-          <li>你可以不添加任何联系人，只使用本地安定工具。</li>
-          <li>你可以随时删除单条会话、担忧记录、思维记录或问题拆解条目。</li>
-          <li>你可以在应用内清除全部本地数据。</li>
-          <li>你可以关闭通知或暂停提醒。</li>
-          <li>你可以自行导出备份，或删除本地备份文件。</li>
+          <li>你可以不添加联系人，只使用本地安定工具。</li>
+          <li>你可以删除单条记录，或在应用内清除全部本地数据。</li>
+          <li>你可以关闭通知、暂停提醒，或删除本地备份文件。</li>
         </ul>
       </section>
 
       <section class="card">
         <h2>产品边界</h2>
-        <p>
-          XinHuan 是一个非医疗性质的焦虑支持与自我调节工具，不提供诊断、治疗或用药建议，也不能替代心理治疗、精神科服务或紧急医疗照护。
-        </p>
+        <p>XinHuan 是一个非医疗性质的焦虑支持与自我调节工具，不提供诊断、治疗或用药建议，也不能替代心理治疗、精神科服务或紧急医疗照护。</p>
       </section>
 
-      <section class="card" id="contact">
+      <section class="card">
         <h2>联系我们</h2>
         <p>开发者名称：Junge</p>
-        <p>联系邮箱：<span class="mono">lin757834215@gmail.com</span></p>
-        <p>支持页面：<span class="mono">https://linsheng1994.github.io/llmwiki-legal/xinhuan/support.html</span></p>
+        <p>联系邮箱：<a href="mailto:lin757834215@gmail.com">lin757834215@gmail.com</a></p>
       </section>
 
-      <footer class="footer">
-        返回 <a href="./index.html">法务页面目录</a> · 支持页 <a href="./support.html">support.html</a>
-      </footer>
+      <footer class="footer">返回 <a href="./index.html?lang=zh-CN">法务页面目录</a> · 支持页 <a href="./support.html?lang=zh-CN">support.html</a></footer>
+    </main>
+
+    <main class="page" data-lang="en">
+      <section class="hero">
+        <span class="eyebrow">Privacy Policy</span>
+        <h1>XinHuan Privacy Policy</h1>
+        <p>This page explains how the current iPhone version of XinHuan accesses, processes, stores, and shares information. It reflects the app behavior as of April 9, 2026.</p>
+        <div class="hero-meta">
+          <span>Effective date: 2026-04-09</span>
+          <span>Applies to: iPhone version</span>
+          <span><a href="./support.html?lang=en">Support page</a></span>
+        </div>
+      </section>
+
+      <div class="banner">Contact email: <span class="mono">lin757834215@gmail.com</span> · Support page: <span class="mono">https://linsheng1994.github.io/llmwiki-legal/xinhuan/support.html</span></div>
+
+      <section class="card">
+        <h2>Summary</h2>
+        <div class="grid">
+          <article class="tile"><strong>Local-first</strong><span>Sessions, support contacts, notes, and personalized entries stay on your device by default.</span></article>
+          <article class="tile"><strong>No account system</strong><span>The current version does not require sign-up, sign-in, or a cloud account.</span></article>
+          <article class="tile"><strong>No third-party analytics</strong><span>The current version does not include ad tracking or third-party analytics SDKs.</span></article>
+          <article class="tile"><strong>User-triggered sharing only</strong><span>Information only leaves the app when you deliberately use calls, SMS, sharing, or file import/export actions.</span></article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>What information the app handles</h2>
+        <table class="fact-table">
+          <tr><th>User-entered content</th><td>Support contacts, calm notes, worry entries, thought records, problem-solving content, and optional session notes.</td></tr>
+          <tr><th>Local usage state</th><td>Selected scenario, saved tools, pinned actions, reminder times, onboarding state, and the last helpful action.</td></tr>
+          <tr><th>Notification settings</th><td>If reminders are enabled, the app schedules local notifications and stores reminder timing on device.</td></tr>
+          <tr><th>Backup files</th><td>If you export or import a backup, the app reads or writes a JSON file that you manually choose.</td></tr>
+        </table>
+      </section>
+
+      <section class="card">
+        <h2>How the app uses this information</h2>
+        <p>The app uses this information only to provide calming tools, local summaries, support contact actions, reminders, and optional backup restore. The current version does not use this information for advertising, profiling, or third-party analytics.</p>
+      </section>
+
+      <section class="card">
+        <h2>When information may be shared or transmitted</h2>
+        <p>The current version does not include a developer-operated backend, cloud sync, account system, hosted model service, third-party analytics SDK, or ad network. Information only leaves the app when you deliberately trigger phone, SMS, share, or file import/export actions through the iOS system.</p>
+      </section>
+
+      <section class="card">
+        <h2>Storage and protection</h2>
+        <p>App state and records are stored locally on the device. To support the widget, a limited summary snapshot is written to a local App Group container on the same device. Exported backups are written only to the location you choose.</p>
+      </section>
+
+      <section class="card">
+        <h2>Your choices</h2>
+        <ul>
+          <li>You can use the app without adding any contacts.</li>
+          <li>You can delete individual entries or clear all local app data.</li>
+          <li>You can turn notifications off, pause reminders, or delete exported backup files.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Product boundary</h2>
+        <p>XinHuan is a non-medical anxiety support tool. It does not provide diagnosis, treatment, medication advice, psychotherapy, psychiatric care, or emergency services.</p>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>Developer: Junge</p>
+        <p>Email: <a href="mailto:lin757834215@gmail.com">lin757834215@gmail.com</a></p>
+      </section>
+
+      <footer class="footer">Back to the <a href="./index.html?lang=en">legal directory</a> · Support page <a href="./support.html?lang=en">support.html</a></footer>
+    </main>
+
+    <main class="page" data-lang="fr-CA">
+      <section class="hero">
+        <span class="eyebrow">Confidentialité</span>
+        <h1>Politique de confidentialité de XinHuan</h1>
+        <p>Cette page explique comment la version iPhone actuelle de XinHuan accède aux informations, les traite, les stocke et les partage. Elle reflète le comportement de l’app au 9 avril 2026.</p>
+        <div class="hero-meta">
+          <span>Date d’effet : 2026-04-09</span>
+          <span>Version visée : iPhone</span>
+          <span><a href="./support.html?lang=fr-CA">Page de soutien</a></span>
+        </div>
+      </section>
+
+      <div class="banner">Courriel : <span class="mono">lin757834215@gmail.com</span> · Page de soutien : <span class="mono">https://linsheng1994.github.io/llmwiki-legal/xinhuan/support.html</span></div>
+
+      <section class="card">
+        <h2>Résumé</h2>
+        <div class="grid">
+          <article class="tile"><strong>Local d’abord</strong><span>Les sessions, notes, contacts de soutien et entrées personnalisées restent sur l’appareil par défaut.</span></article>
+          <article class="tile"><strong>Sans compte</strong><span>La version actuelle ne demande ni inscription, ni connexion, ni compte infonuagique.</span></article>
+          <article class="tile"><strong>Sans analytics tiers</strong><span>La version actuelle n’intègre ni suivi publicitaire ni SDK d’analytics tiers.</span></article>
+          <article class="tile"><strong>Sortie volontaire seulement</strong><span>Les informations ne quittent l’app que si tu déclenches volontairement un appel, un SMS, un partage ou un import/export de fichier.</span></article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Quelles informations l’app traite</h2>
+        <table class="fact-table">
+          <tr><th>Contenu saisi</th><td>Contacts de soutien, notes d’apaisement, inquiétudes, fiches de pensées, résolution de problème et notes de session facultatives.</td></tr>
+          <tr><th>État d’usage local</th><td>Scénario sélectionné, outils enregistrés, actions épinglées, horaires de rappel, état de l’accueil et dernière action utile.</td></tr>
+          <tr><th>Réglages de notifications</th><td>Si les rappels sont activés, l’app programme des notifications locales et conserve l’horaire sur l’appareil.</td></tr>
+          <tr><th>Fichiers de sauvegarde</th><td>Si tu exportes ou importes une sauvegarde, l’app lit ou écrit un fichier JSON que tu choisis toi-même.</td></tr>
+        </table>
+      </section>
+
+      <section class="card">
+        <h2>Comment l’app utilise ces informations</h2>
+        <p>Ces informations servent uniquement à offrir les outils d’apaisement, les résumés locaux, les actions liées aux contacts de soutien, les rappels et la restauration facultative. La version actuelle n’utilise pas ces informations pour la publicité, le profilage ou des analytics tiers.</p>
+      </section>
+
+      <section class="card">
+        <h2>Quand les informations peuvent être partagées</h2>
+        <p>La version actuelle n’inclut ni backend du développeur, ni synchronisation infonuagique, ni système de compte, ni service de modèle hébergé, ni SDK d’analytics tiers, ni réseau publicitaire. Les informations ne quittent l’app que si tu déclenches volontairement les fonctions système d’appel, de SMS, de partage ou d’import/export.</p>
+      </section>
+
+      <section class="card">
+        <h2>Stockage et protection</h2>
+        <p>L’état de l’app et les enregistrements restent sur l’appareil. Pour permettre au widget de fonctionner, un court résumé local est écrit dans un conteneur App Group sur le même appareil. Les sauvegardes exportées ne sont écrites qu’à l’emplacement que tu choisis.</p>
+      </section>
+
+      <section class="card">
+        <h2>Vos choix</h2>
+        <ul>
+          <li>Tu peux utiliser l’app sans ajouter de contacts.</li>
+          <li>Tu peux supprimer des entrées individuelles ou effacer toutes les données locales.</li>
+          <li>Tu peux désactiver les notifications, suspendre les rappels ou supprimer les fichiers exportés.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Limite du produit</h2>
+        <p>XinHuan est un outil de soutien non médical. Il ne fournit ni diagnostic, ni traitement, ni conseil médicamenteux, ni psychothérapie, ni service psychiatrique, ni service d’urgence.</p>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>Développeur : Junge</p>
+        <p>Courriel : <a href="mailto:lin757834215@gmail.com">lin757834215@gmail.com</a></p>
+      </section>
+
+      <footer class="footer">Retour au <a href="./index.html?lang=fr-CA">répertoire légal</a> · Page de soutien <a href="./support.html?lang=fr-CA">support.html</a></footer>
     </main>
   </body>
 </html>

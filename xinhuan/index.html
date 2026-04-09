@@ -1,19 +1,29 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>XinHuan 法务与支持页面</title>
+    <title>XinHuan Legal and Support Pages</title>
     <link rel="stylesheet" href="../legal.css" />
+    <script defer src="../locale.js"></script>
   </head>
   <body>
-    <main class="page">
+    <div class="page">
+      <section class="hero">
+        <span class="eyebrow">XinHuan</span>
+        <div class="locale-switch" aria-label="Language switch">
+          <a href="?lang=zh-CN" data-lang-link="zh-CN">简体中文</a>
+          <a href="?lang=en" data-lang-link="en">English</a>
+          <a href="?lang=fr-CA" data-lang-link="fr-CA">Français</a>
+        </div>
+      </section>
+    </div>
+
+    <main class="page" data-lang="zh-CN">
       <section class="hero">
         <span class="eyebrow">XinHuan</span>
         <h1>隐私、支持与条款页面</h1>
-        <p>
-          这是 XinHuan 在 App Store Connect 中使用的公开页面目录，包含隐私政策、支持页面与使用条款。
-        </p>
+        <p>这是 XinHuan 在 App Store Connect 中使用的公开页面目录，包含隐私政策、支持页面与使用条款。</p>
         <div class="hero-meta">
           <span>适用平台：iPhone</span>
           <span>页面更新时间：2026-04-09</span>
@@ -29,23 +39,95 @@
         <h2>可直接使用的页面</h2>
         <div class="grid">
           <article class="tile">
-            <strong><a href="./privacy-policy.html">隐私政策</a></strong>
+            <strong><a href="./privacy-policy.html?lang=zh-CN">隐私政策</a></strong>
             <span>用于 App Store Connect 的 Privacy Policy URL。</span>
           </article>
           <article class="tile">
-            <strong><a href="./support.html">支持页面</a></strong>
+            <strong><a href="./support.html?lang=zh-CN">支持页面</a></strong>
             <span>用于 App Store Connect 的 Support URL。</span>
           </article>
           <article class="tile">
-            <strong><a href="./terms.html">使用条款</a></strong>
+            <strong><a href="./terms.html?lang=zh-CN">使用条款</a></strong>
             <span>用于商用发布时的 Terms of Use 链接。</span>
           </article>
         </div>
       </section>
 
-      <footer class="footer">
-        这些页面描述的是当前版本的真实行为：本地优先、无账号、无第三方分析、无云同步、非医疗支持工具。
-      </footer>
+      <footer class="footer">这些页面描述的是当前版本的真实行为：本地优先、无账号、无第三方分析、无云同步、非医疗支持工具。</footer>
+    </main>
+
+    <main class="page" data-lang="en">
+      <section class="hero">
+        <span class="eyebrow">XinHuan</span>
+        <h1>Privacy, Support, and Terms</h1>
+        <p>This public directory is used for XinHuan in App Store Connect and includes the privacy policy, support page, and terms of use.</p>
+        <div class="hero-meta">
+          <span>Platform: iPhone</span>
+          <span>Updated: 2026-04-09</span>
+        </div>
+      </section>
+
+      <div class="banner">
+        Contact email: <span class="mono">lin757834215@gmail.com</span> · Support page:
+        <span class="mono">https://linsheng1994.github.io/llmwiki-legal/xinhuan/support.html</span>
+      </div>
+
+      <section class="card">
+        <h2>Public pages</h2>
+        <div class="grid">
+          <article class="tile">
+            <strong><a href="./privacy-policy.html?lang=en">Privacy Policy</a></strong>
+            <span>Use this as the Privacy Policy URL in App Store Connect.</span>
+          </article>
+          <article class="tile">
+            <strong><a href="./support.html?lang=en">Support</a></strong>
+            <span>Use this as the Support URL in App Store Connect.</span>
+          </article>
+          <article class="tile">
+            <strong><a href="./terms.html?lang=en">Terms of Use</a></strong>
+            <span>Use this as the commercial Terms of Use link.</span>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">These pages describe the current production behavior: local-first, no account system, no third-party analytics, no cloud sync, and non-medical support positioning.</footer>
+    </main>
+
+    <main class="page" data-lang="fr-CA">
+      <section class="hero">
+        <span class="eyebrow">XinHuan</span>
+        <h1>Confidentialité, soutien et conditions</h1>
+        <p>Ce répertoire public est utilisé pour XinHuan dans App Store Connect et regroupe la politique de confidentialité, la page de soutien et les conditions d’utilisation.</p>
+        <div class="hero-meta">
+          <span>Plateforme : iPhone</span>
+          <span>Mise à jour : 2026-04-09</span>
+        </div>
+      </section>
+
+      <div class="banner">
+        Courriel : <span class="mono">lin757834215@gmail.com</span> · Page de soutien :
+        <span class="mono">https://linsheng1994.github.io/llmwiki-legal/xinhuan/support.html</span>
+      </div>
+
+      <section class="card">
+        <h2>Pages publiques</h2>
+        <div class="grid">
+          <article class="tile">
+            <strong><a href="./privacy-policy.html?lang=fr-CA">Politique de confidentialité</a></strong>
+            <span>À utiliser comme URL de confidentialité dans App Store Connect.</span>
+          </article>
+          <article class="tile">
+            <strong><a href="./support.html?lang=fr-CA">Soutien</a></strong>
+            <span>À utiliser comme URL de soutien dans App Store Connect.</span>
+          </article>
+          <article class="tile">
+            <strong><a href="./terms.html?lang=fr-CA">Conditions d’utilisation</a></strong>
+            <span>À utiliser comme lien commercial pour les conditions d’utilisation.</span>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">Ces pages décrivent le comportement actuel en production : approche locale d’abord, sans compte, sans analytics tiers, sans synchronisation infonuagique, et avec un positionnement de soutien non médical.</footer>
     </main>
   </body>
 </html>
